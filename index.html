@@ -21,13 +21,12 @@
       />
       <button id="lang-toggle">FR</button>
       <h1 data-i18n="headline">
-        Learn French with Confidence — Start Today for Just $1!
+        Speak French in 3 Months with Our Natural Learning Method – Start Today
+        for Just $1!
       </h1>
       <p data-i18n="intro">
-        Access immersive in-person and online learning with our proven Baby
-        Learning Method — learn French naturally, like a child! Usually priced
-        at $199/month, we are now offering a special one-month trial for only $1
-        — no commitment required.
+        Experience our exclusive Baby Learning Method, trusted by over 500
+        learners across Canada.
       </p>
       <img
         src="st.png"
@@ -40,43 +39,42 @@
           Join Now for Just $1
         </button>
       </a>
+
+      <div id="countdown"><span id="timer">Time left: Loading...</span></div>
     </header>
 
     <section class="section">
       <h2 class="section-title" data-i18n="included-title">What's Included</h2>
       <div class="columns">
         <div class="box">
-          <h3 data-i18n="trial-title">Your $1 Trial Includes</h3>
+          <h3 data-i18n="trial-title">What You Get for Just $1</h3>
           <ul>
-            <li data-i18n="trial-1">✅ One full month of in-class learning</li>
-            <li data-i18n="trial-2">
-              ✅ Weekly immersive experience using the Baby Learning Method
+            <li data-i18n="trial-1">
+              ✅ 1 full month of French classes – online or in-person
             </li>
+            <li data-i18n="trial-2">✅ 24/7 access to our learning platform</li>
             <li data-i18n="trial-3">
-              ✅ Weekly live Zoom sessions with French teachers
+              ✅ Step-by-step video, audio, and interactive lessons
             </li>
             <li data-i18n="trial-4">
-              ✅ Weekly in-person sessions with certified instructors
+              ✅ Personalized coaching from certified instructors
             </li>
             <li data-i18n="trial-5">
-              ✅ Certificate of completion after 3 months
+              ✅ Official certificate after completing the 3-month program
             </li>
           </ul>
         </div>
         <div class="box">
-          <h3 data-i18n="why-title">Why This Works</h3>
+          <h3 data-i18n="why-title">Why This Method Works</h3>
           <ul>
-            <li data-i18n="why-1">🧠 Learn naturally – like babies do</li>
+            <li data-i18n="why-1">✔️ You listen before you learn grammar</li>
             <li data-i18n="why-2">
-              📅 Daily structured lessons (video + audio)
+              ✔️ You repeat daily in real-life situations
             </li>
-            <li data-i18n="why-3">
-              🗣️ Personalized coaching and progress tracking
-            </li>
+            <li data-i18n="why-3">✔️ You progress at your own pace</li>
             <li data-i18n="why-4">
-              🌎 Access to our smart online learning platform
+              ✔️ You start speaking from the first weeks
             </li>
-            <li data-i18n="why-5">⭐ Trusted by over 500 students</li>
           </ul>
         </div>
       </div>
@@ -102,16 +100,17 @@
       </h2>
       <div class="testimonial">
         <p data-i18n="testimonial-1">
-          “I was speaking full sentences in just 4 weeks! This program truly
-          delivers.”
+          “I had never succeeded in learning a language… until now. After one
+          month, I could understand my coworkers!”
         </p>
-        <span>– Maria G., Toronto</span>
+        <span>– Nadine B., Montreal</span>
       </div>
       <div class="testimonial">
         <p data-i18n="testimonial-2">
-          “Best $1 I ever spent. It gave me the confidence to speak at work.”
+          “The $1 offer convinced me to try. Now, I’m chatting in French with my
+          neighbors after just 6 weeks!”
         </p>
-        <span>– Jean-Luc N., Montreal</span>
+        <span>– Carlos M., Ottawa</span>
       </div>
     </section>
 
@@ -154,9 +153,9 @@
         style="text-align: center; max-width: 700px; margin: 0 auto 2rem"
         data-i18n="start-text"
       >
-        Give yourself or someone you love the gift of language. One month of
-        expert-led French learning for just $1. Cancel anytime — no strings
-        attached.
+        Try it risk-free. We believe in the power of our program. If you’re not
+        satisfied, you’ll receive a full refund within 7 days – no questions
+        asked.
       </p>
       <div style="text-align: center">
         <a href="https://kibtech.ca/registration/?ld_register_id=2872">
@@ -169,6 +168,45 @@
           <a href="tel:+18138675965">+1 (813) 867‑5965</a>
         </p>
       </div>
+    </section>
+    <section class="section contact-section">
+      <form id="contact-form" novalidate>
+        <h2 class="section-title" data-i18n="contact-title">Contact Us</h2>
+
+        <label for="name" data-i18n="contact-name-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder=""
+          data-i18n-placeholder="contact-name-placeholder"
+          required
+        />
+
+        <label for="email" data-i18n="contact-email-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder=""
+          data-i18n-placeholder="contact-email-placeholder"
+          required
+        />
+
+        <label for="message" data-i18n="contact-message-label">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder=""
+          data-i18n-placeholder="contact-message-placeholder"
+          required
+        ></textarea>
+
+        <button type="submit" data-i18n="contact-submit-btn">Send</button>
+
+        <p id="form-message" role="alert"></p>
+      </form>
     </section>
 
     <footer>
@@ -183,111 +221,70 @@
         >
       </p>
     </footer>
-
+    <script src="./js/main.js"></script>
     <script>
-      const translations = {
-        en: {
-          headline: "Learn French with Confidence — Start Today for Just $1!",
-          intro:
-            "Access immersive in-person and online learning with our proven Baby Learning Method — learn French naturally, like a child! Usually priced at $199/month, we are now offering a special one-month trial for only $1 — no commitment required.",
-          "join-btn": "Join Now for Just $1",
-          "included-title": "What's Included",
-          "trial-title": "Your $1 Trial Includes",
-          "trial-1": "✅ One full month of in-class learning",
-          "trial-2":
-            "✅ Weekly immersive experience using the Baby Learning Method",
-          "trial-3": "✅ Weekly live Zoom sessions with French teachers",
-          "trial-4": "✅ Weekly in-person sessions with certified instructors",
-          "trial-5": "✅ Certificate of completion after 3 months",
-          "why-title": "Why This Works",
-          "why-1": "🧠 Learn naturally – like babies do",
-          "why-2": "📅 Daily structured lessons (video + audio)",
-          "why-3": "🗣️ Personalized coaching and progress tracking",
-          "why-4": "🌎 Access to our smart online learning platform",
-          "why-5": "⭐ Trusted by over 500 students",
-          "video-title": "Watch How It Works",
-          "testimonial-title": "What Our Students Say",
-          "testimonial-1":
-            "“I was speaking full sentences in just 4 weeks! This program truly delivers.”",
-          "testimonial-2":
-            "“Best $1 I ever spent. It gave me the confidence to speak at work.”",
-          "why-us-title": "Why Choose Us?",
-          "card-1-title": "Flexible & Online",
-          "card-1-text":
-            "Learn anytime, anywhere with both mobile and desktop access.",
-          "card-2-title": "Real Support",
-          "card-2-text":
-            "Weekly sessions with expert instructors and personalized coaching.",
-          "card-3-title": "Simple Approach",
-          "card-3-text":
-            "Our Baby Learning Method focuses on natural acquisition, not grammar.",
-          "card-4-title": "No Risk",
-          "card-4-text": "Try it for $1 — no obligation, no hidden fees.",
-          "start-title": "Start Today for Only $1",
-          "start-text":
-            "Give yourself or someone you love the gift of language. One month of expert-led French learning for just $1. Cancel anytime — no strings attached.",
-          "start-btn": "Start Now – $1 Trial",
-        },
-        fr: {
-          headline:
-            "Apprenez le français en toute confiance — Commencez aujourd'hui pour seulement 1 $ !",
-          intro:
-            "Accédez à des cours en présentiel et en ligne avec notre méthode d'apprentissage bébé — apprenez naturellement comme un enfant ! Habituellement à 199 $/mois, nous offrons maintenant un mois d’essai pour seulement 1 $ — sans engagement.",
-          "join-btn": "Rejoignez-nous pour seulement 1 $",
-          "included-title": "Ce qui est inclus",
-          "trial-title": "Votre essai à 1 $ comprend",
-          "trial-1": "✅ Un mois complet d’apprentissage en classe",
-          "trial-2": "✅ Une immersion hebdomadaire avec la méthode bébé",
-          "trial-3":
-            "✅ Des séances Zoom en direct chaque semaine avec nos professeurs",
-          "trial-4":
-            "✅ Des rencontres hebdomadaires en personne avec des instructeurs certifiés",
-          "trial-5": "✅ Un certificat après 3 mois",
-          "why-title": "Pourquoi ça fonctionne",
-          "why-1": "🧠 Apprenez naturellement – comme les bébés",
-          "why-2": "📅 Leçons structurées quotidiennes (vidéo + audio)",
-          "why-3": "🗣️ Encadrement personnalisé et suivi des progrès",
-          "why-4": "🌎 Accès à notre plateforme d'apprentissage intelligente",
-          "why-5": "⭐ Approuvé par plus de 500 étudiants",
-          "video-title": "Regardez comment cela fonctionne",
-          "testimonial-title": "Ce que disent nos étudiants",
-          "testimonial-1":
-            "« Je parlais en phrases complètes en seulement 4 semaines ! Ce programme est vraiment efficace. »",
-          "testimonial-2":
-            "« Le meilleur dollar que j’aie jamais dépensé. Il m’a donné la confiance nécessaire pour m’exprimer au travail. »",
-          "why-us-title": "Pourquoi nous choisir ?",
-          "card-1-title": "Flexible et en ligne",
-          "card-1-text":
-            "Apprenez n’importe quand, n’importe où depuis votre mobile ou ordinateur.",
-          "card-2-title": "Vrai soutien",
-          "card-2-text":
-            "Séances hebdomadaires avec nos experts et encadrement personnalisé.",
-          "card-3-title": "Approche simple",
-          "card-3-text":
-            "Notre méthode bébé se concentre sur l’acquisition naturelle, pas la grammaire.",
-          "card-4-title": "Sans risque",
-          "card-4-text":
-            "Essayez pour 1 $ — sans engagement, sans frais cachés.",
-          "start-title": "Commencez aujourd’hui pour seulement 1 $",
-          "start-text":
-            "Offrez-vous ou à un proche le cadeau de la langue. Un mois d’apprentissage avec des experts pour seulement 1 $. Annulez à tout moment — sans engagement.",
-          "start-btn": "Commencez maintenant – Essai à 1 $",
-        },
-      };
+      const form = document.getElementById("contact-form");
+      const formMessage = document.getElementById("form-message");
 
-      const toggleButton = document.getElementById("lang-toggle");
-      let currentLang = "en";
-
-      toggleButton.addEventListener("click", () => {
-        currentLang = currentLang === "en" ? "fr" : "en";
-        toggleButton.textContent = currentLang === "en" ? "FR" : "EN";
-
-        document.querySelectorAll("[data-i18n]").forEach((el) => {
-          const key = el.getAttribute("data-i18n");
-          if (translations[currentLang][key]) {
-            el.textContent = translations[currentLang][key];
+      // Met à jour les placeholders dynamiquement (après updateLanguage)
+      function updatePlaceholders(lang) {
+        document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+          const key = el.getAttribute("data-i18n-placeholder");
+          if (translations[lang][key]) {
+            el.placeholder = translations[lang][key];
           }
         });
+      }
+
+      function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const lang = currentLang;
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        if (!name || !email || !message) {
+          formMessage.textContent =
+            translations[lang]["contact-error-required"];
+          formMessage.className = "";
+          return;
+        }
+
+        if (!validateEmail(email)) {
+          formMessage.textContent = translations[lang]["contact-error-email"];
+          formMessage.className = "";
+          return;
+        }
+
+        // Simule envoi réussi
+        formMessage.textContent = translations[lang]["contact-success"];
+        formMessage.className = "success";
+
+        form.reset();
+      });
+
+      // Met à jour aussi les placeholders au changement de langue
+      function updateFormLanguage(lang) {
+        updateLanguage(lang);
+        updatePlaceholders(lang);
+        formMessage.textContent = "";
+      }
+
+      toggleButton.addEventListener("click", () => {
+        const newLang = currentLang === "en" ? "fr" : "en";
+        updateFormLanguage(newLang);
+        startCountdown(newLang);
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        updateFormLanguage(currentLang);
+        startCountdown(currentLang);
       });
     </script>
   </body>
