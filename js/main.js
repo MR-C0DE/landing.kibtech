@@ -57,7 +57,17 @@ const translations = {
         "contact-submit-btn": "Send",
         "contact-error-required": "Please fill out all fields.",
         "contact-error-email": "Please enter a valid email address.",
-        "contact-success": "Thank you! Your message has been sent."
+        "contact-success": "Thank you! Your message has been sent.",
+        "payment-policy-title": "Secure Payment",
+        "payment-policy-text": "Your $1 payment is fully secured and encrypted. You will receive immediate access to the platform. Cancel anytime.",
+        "payment-email-label": "Email address",
+        "payment-email-placeholder": "e.g., user@email.com",
+        "payment-card-label": "Card information",
+        "payment-country-label": "Country",
+        "payment-country-placeholder": "Canada",
+        "payment-postal-label": "Postal code",
+        "payment-postal-placeholder": "H3Z 2Y7",
+        "payment-submit-btn": "Securely pay $1"
     },
     fr: {
         // Header
@@ -117,7 +127,17 @@ const translations = {
         "contact-submit-btn": "Envoyer",
         "contact-error-required": "Veuillez remplir tous les champs.",
         "contact-error-email": "Veuillez entrer une adresse email valide.",
-        "contact-success": "Merci ! Votre message a été envoyé."
+        "contact-success": "Merci ! Votre message a été envoyé.",
+        "payment-policy-title": "Paiement Sécurisé",
+        "payment-policy-text": "Votre paiement de 1 $ est entièrement sécurisé et crypté. Vous recevrez un accès immédiat à la plateforme. Annulez à tout moment.",
+        "payment-email-label": "Adresse email",
+        "payment-email-placeholder": "ex: utilisateur@email.com",
+        "payment-card-label": "Informations de carte",
+        "payment-country-label": "Pays",
+        "payment-country-placeholder": "Canada",
+        "payment-postal-label": "Code postal",
+        "payment-postal-placeholder": "H3Z 2Y7",
+        "payment-submit-btn": "Payer 1 $ en toute sécurité"
     }
 };
 
