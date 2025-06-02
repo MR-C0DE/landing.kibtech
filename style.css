@@ -570,6 +570,7 @@ footer a:hover {
 }
 
 .payment-section input,
+.InputElement,
 .payment-section textarea {
     width: 100%;
     padding: 1rem;
