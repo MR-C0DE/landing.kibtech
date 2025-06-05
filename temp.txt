@@ -1,0 +1,64 @@
+    <!--
+    <section class="section">
+      <h2 class="section-title" data-i18n="testimonial-title">
+        What Our Students Say
+      </h2>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img
+            src="images/nadine.jpg"
+            alt="Nadine B."
+            class="testimonial-img"
+          />
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+        <p data-i18n="testimonial-1">
+          “I had never succeeded in learning a language… until now. After one
+          month, I could understand my coworkers!”
+        </p>
+        <span>– Nadine B., Montreal</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img
+            src="images/carlos.jpg"
+            alt="Carlos M."
+            class="testimonial-img"
+          />
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+        <p data-i18n="testimonial-2">
+          “The $1 offer convinced me to try. Now, I’m chatting in French with my
+          neighbors after just 6 weeks!”
+        </p>
+        <span>– Carlos M., Ottawa</span>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-header">
+          <img
+            src="images/carlos.jpg"
+            alt="Carlos M."
+            class="testimonial-img"
+          />
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+        <p data-i18n="testimonial-2">
+          “I learned to speak fluently in three months. The Kibtech "Baby
+          Learning Method" really works”
+        </p>
+        <span>– Elizabeth, South Africa</span>
+      </div>
+
+      <div class="btn-content">
+        <a href="https://kibtech.ca/registration/?ld_register_id=2872">
+          <button class="cta-main" data-i18n="join-btn">
+            Join Now for Just $1
+          </button>
+        </a>
+      </div>
+    </section>
+
+  -->

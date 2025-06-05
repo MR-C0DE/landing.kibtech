@@ -15,7 +15,7 @@ function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const lang = currentLang;
@@ -25,8 +25,7 @@ form.addEventListener("submit", (e) => {
     const message = form.message.value.trim();
 
     if (!name || !email || !message) {
-        formMessage.textContent =
-            translations[lang]["contact-error-required"];
+        formMessage.textContent = translations[lang]["contact-error-required"];
         formMessage.className = "";
         return;
     }
@@ -37,11 +36,31 @@ form.addEventListener("submit", (e) => {
         return;
     }
 
-    // Simule envoi réussi
-    formMessage.textContent = translations[lang]["contact-success"];
-    formMessage.className = "success";
+    formMessage.textContent = translations[lang]["contact-sending"];
+    formMessage.className = "";
 
-    form.reset();
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch("https://messagesender.taskflowgen.com/kibtech/messages.php", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            formMessage.textContent = translations[lang]["contact-success"];
+            formMessage.className = "success";
+            form.reset();
+        } else {
+            formMessage.textContent = result.message || translations[lang]["contact-error-generic"];
+            formMessage.className = "error";
+        }
+    } catch (error) {
+        formMessage.textContent = translations[lang]["contact-error-network"] || "Erreur de connexion.";
+        formMessage.className = "error";
+    }
 });
 
 // Met à jour aussi les placeholders au changement de langue
